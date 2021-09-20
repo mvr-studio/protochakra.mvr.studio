@@ -5,6 +5,8 @@ import { Hero } from '@mvr-studio/protochakra'
 import Layout from '../components/Layout'
 import { RiCodeSSlashFill, RiFlashlightLine, RiHeart2Fill, RiBook2Line, RiGithubLine } from 'react-icons/ri'
 import Title from '../components/Title'
+import HeroImage from '../public/hero.png'
+import NextImage from 'next/image'
 
 const DOCUMENTATION_URL = 'https://protochakra-docs.mvr.studio/'
 const GITHUB_REPO_URL = 'https://github.com/mvr-studio/protochakra'
@@ -47,7 +49,7 @@ const Home: NextPage = () => {
           </Flex>
         )}
       >
-        <Image src="/hero.png" width="22rem" height="22rem" alt="Hero Illustration" />
+        <NextImage src={HeroImage} width={360} height={360} alt="Hero Illustration" unoptimized />
       </Hero>
       <Box backgroundColor="blue.50" paddingY="6rem" marginTop="6rem">
         <Container maxWidth="container.xl">
