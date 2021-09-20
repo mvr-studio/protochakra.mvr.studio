@@ -1,7 +1,6 @@
 import React from 'react'
-import { Flex, Button, Box, HStack, Text, Link, Icon } from '@chakra-ui/react'
+import { Flex, Button, Box, HStack, Text, Link, Icon, Image } from '@chakra-ui/react'
 import { Navbar, Footer } from '@mvr-studio/protochakra'
-import NextImage from 'next/image'
 import { RiGithubLine } from 'react-icons/ri'
 
 interface LayoutProps {
@@ -14,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Navbar
         branding={
           <HStack>
-            <NextImage src="/logo.svg" width={28} height={28} alt="ProtoChakra Logo" unoptimized={true} />
+            <Image src="/logo.svg" width="1.5rem" height="1.5rem" alt="ProtoChakra Logo" />
             <Text>ProtoChakra</Text>
           </HStack>
         }

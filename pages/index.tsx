@@ -1,8 +1,7 @@
 import React from 'react'
 import type { NextPage } from 'next'
-import { Button, HStack, Box, Container, SimpleGrid, Heading, Text, Icon, Center, Flex } from '@chakra-ui/react'
+import { Button, HStack, Box, Container, SimpleGrid, Heading, Text, Icon, Center, Flex, Image } from '@chakra-ui/react'
 import { Hero } from '@mvr-studio/protochakra'
-import NextImage from 'next/image'
 import Layout from '../components/Layout'
 import { RiCodeSSlashFill, RiFlashlightLine, RiHeart2Fill, RiBook2Line, RiGithubLine } from 'react-icons/ri'
 import Title from '../components/Title'
@@ -48,7 +47,7 @@ const Home: NextPage = () => {
           </Flex>
         )}
       >
-        <NextImage src="/hero.png" width={360} height={360} alt="Hero Illustration" unoptimized={true} />
+        <Image src="/hero.png" width="22rem" height="22rem" alt="Hero Illustration" />
       </Hero>
       <Box backgroundColor="blue.50" paddingY="6rem" marginTop="6rem">
         <Container maxWidth="container.xl">
