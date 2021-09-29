@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, Button, Box, HStack, Text, Link, Icon, Image } from '@chakra-ui/react'
 import { Navbar, Footer } from '@mvr-studio/protochakra'
-import { RiGithubLine } from 'react-icons/ri'
+import { RiGithubLine, RiMailLine } from 'react-icons/ri'
 import NextImage from 'next/image'
 import LogoImage from '../public/logo.svg'
 
@@ -25,12 +25,17 @@ const Layout = ({ children }: LayoutProps) => {
           href="https://github.com/mvr-studio/protochakra"
           target="_blank"
           rel="noreferrer"
-          variant="outline"
+          variant="ghost"
           leftIcon={<Icon as={RiGithubLine} />}
         >
           Star
         </Button>
-        <Button as="a" href="mailto:team@mvr.studio?subject=ProtoChakra Contact" variant="outline">
+        <Button
+          leftIcon={<Icon as={RiMailLine} />}
+          as="a"
+          href="mailto:team@mvr.studio?subject=ProtoChakra Contact"
+          variant="outline"
+        >
           Contact
         </Button>
       </Navbar>
@@ -40,7 +45,7 @@ const Layout = ({ children }: LayoutProps) => {
         copyrightOwner={
           <Text as="span">
             ProtoChakra. Developed by{' '}
-            <Link as="a" href="https://mvr.studio" target="_blank" rel="noreferrer" color="blue.600">
+            <Link as="a" href="https://mvr.studio" target="_blank" rel="noreferrer" color="primary.600">
               MVR Studio
             </Link>
             .
